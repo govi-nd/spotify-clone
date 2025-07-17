@@ -1,0 +1,182 @@
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #000; /* Example */
+  color: white;
+  overflow: hidden;
+}
+
+/* Playbar fixed to bottom of .right */
+.playbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #121212;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Closer spacing between buttons */
+  z-index: 100;
+  height: 50px;
+}
+
+/* Optional: make song-info prettier */
+.song-info {
+  position: absolute;
+  left: 20px;
+  top: 35%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+/* Make control icons smaller and tighter */
+.playbar img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.playbar img:hover {
+  transform: scale(1.1);
+}
+.time {
+  position: absolute;
+  top: 10%;
+  right: 20px;
+}
+
+
+.volume {
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.volume img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.volume-seekbar {
+  position: relative;
+  width: 100px;
+  height: 5px;
+  background-color: #c91f1f;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden; 
+}
+
+
+.volume-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: yellow;
+  border-radius: 50%;
+  
+}
+
+
+
+
+.seekbar {
+  height: 5px;
+  position: absolute;
+  top: 90%;
+  width: 100vw;
+  background-color: #c91f1f;
+  border-radius: 50px;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 84%;
+  left: 0%;
+  background-color: yellow;
+}
+/* ---------- Playlist Container ---------- */
+.spotifyPlaylists {
+  padding: 20px 30px;
+}
+
+.spotifyPlaylists h1 {
+  margin-bottom: 10px;
+}
+
+.cardContainer {
+  margin-top: 10px;
+  padding: 0 10px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+/* ---------- Card Styles ---------- */
+.card {
+  width: 200px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #252525;
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  background-color: rgb(45, 45, 45);
+  transform: translateY(-4px);
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 255, 100, 0.4);
+}
+
+.card > * {
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.play {
+  width: 28px;
+  height: 28px;
+  background-color: #1fdf64;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 90px;
+  right: 17px;
+  opacity: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.play:hover {
+  transform: scale(1.2);
+}

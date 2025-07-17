@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="left.css" />
+    <link rel="stylesheet" href="right.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-... (full integrity optional)"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="spotifyLogo invert">
+        <img src="spotifyLogo.svg" alt="logo" />
+      </div>
+
+      <div class="homeSearch">
+        <button class="homeButton invert">
+          <i class="fa-solid fa-house"></i>
+        </button>
+
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            placeholder="What do you want to play"
+            class="search-input"
+          />
+
+          <div class="divider"></div>
+          <i class="fa-solid fa-box-archive right-icon"></i>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="premium">
+          <button class="premium-btn invert">Premium</button>
+        </div>
+        <div class="support">
+          <button class="support-btn invert">Support</button>
+        </div>
+        <div class="download">
+          <button class="download-btn invert">Download</button>
+        </div>
+        <div class="divide"></div>
+        <div class="install">
+          <img class="install-img invert" src="install.svg" alt="install" />
+          <button class="install-btn invert">Install App</button>
+        </div>
+        <div class="sign-up">
+          <button class="sign-up-btn invert">Sign up</button>
+        </div>
+        <div class="log-in">
+          <button class="log-in-btn invert">Log in</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="whole">
+      <div class="left">
+        <div class="library">
+          <p>Your Library</p>
+          <button><i class="fa-solid fa-plus invert"></i></button>
+        </div>
+
+        <div class="songList scrollbox">
+          <ul></ul>
+        </div>
+
+        <div class="playlist">
+          <p class="playlist-1">
+            Create your first playlist <br />
+            <span class="playlist-2">Its easy, we'll help you</span>
+          </p>
+          <button>Create playlist</button>
+        </div>
+
+        <div class="podcast">
+          <p class="podcast-1">
+            Let's find some podcasts to follow<br />
+            <span class="podcast-2"
+              >We'll keep you updated on new episodes</span
+            >
+          </p>
+          <button>Browse podcasts</button>
+        </div>
+
+        <div class="footer"></div>
+        <div class="language"></div>
+      </div>
+
+      <div class="right">
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer"></div>
+        </div>
+        <div class="playbar">
+          <div class="song-info">
+            <div class="title"></div>
+            <div class="artist"></div>
+          </div>
+          <img src="previous.svg" alt="" class="playbar-previous invert" />
+          <img src="play.svg" alt="" class="playbar-play invert" />
+          <img src="next.svg" alt="" class="playbar-next invert" />
+
+          <div class="time"></div>
+          <div class="volume">
+            <img src="volume.svg" alt="volume-icon" class="invert" />
+            <div class="volume-seekbar">
+              <div class="volume-circle"></div>
+            </div>
+          </div>
+
+          <div class="seekbar"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

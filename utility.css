@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.whole {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left {
+  margin: 10px;
+  width: 25%;
+  height: 90vh;
+  background-color: #121212;
+  border-radius: 5px;
+}
+
+.right {
+  margin: 10px;
+  width: 75%;
+  height: 90vh;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+.scrollbox {
+  height: 170px;
+  overflow-y: scroll;
+}
+
+.scrollbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+.scrollbox::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+.scrollbox {
+  scrollbar-color: black #111;
+  scrollbar-width: thin;
+}
+/* .pause-css{
+  height: 100px;
+  background-color: aqua;
+} */

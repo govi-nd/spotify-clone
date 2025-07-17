@@ -1,0 +1,154 @@
+.left {
+  width: 300px; /* Or whatever your width is */
+  background-color: #121212;
+  overflow-y: auto;
+  position: relative;
+}
+
+.library {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.library > p {
+  margin-left: 15px;
+  color: white;
+}
+.library > button {
+  padding-top: 2px;
+  background-color: transparent;
+  margin-right: 10px;
+  border-style: none;
+  border-color: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 200%;
+  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.library > button:hover {
+  transform: scale(1.07);
+  background-color: black;
+}
+.playlist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+}
+.playlist-1 {
+  margin: 0px;
+  padding-top: 10px;
+  color: white;
+  padding-left: 10px;
+  font-size: 17px;
+}
+.playlist-2 {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(189, 189, 189);
+}
+.playlist>button{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 35px;
+    width: 130px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.playlist button:hover{
+  transform: scale(1.05);
+}
+
+
+.podcast {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+}
+.podcast-1 {
+  margin: 0px;
+  padding-top: 10px;
+  color: white;
+  padding-left: 10px;
+  font-size: 17px;
+}
+.podcast-2 {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(189, 189, 189);
+}
+.podcast>button{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 35px;
+    width: 130px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.podcast button:hover{
+  transform: scale(1.05);
+}
+
+.songList ul {
+    padding: 0 12px;
+    color: white;
+    height: 170px;
+    /* overflow: auto; */
+}
+
+.songList ul li {
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid rgba(146, 143, 143, 0.491);
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.songList .info {
+    font-size: 13px;
+    width: 344px;
+}
+
+.info div {
+    word-break: break-all;
+}
+
+.playnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.playnow:hover{
+  transform: scale(1.1);
+}
+
+.playnow span {
+    font-size: 15px;
+    width: 64px;
+    padding: 12px;
+}
+.playnow img {
+  transition: all 0.3s ease;
+}
+.playnow img:hover{
+  transform: scale(1.15);
+}
