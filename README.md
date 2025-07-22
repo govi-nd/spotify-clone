@@ -1,0 +1,1 @@
+A dynamic and interactive music player web application inspired by Spotify. Built using HTML, CSS, and JavaScript, this project was created to enhance my understanding of DOM manipulation, event handling, and UI design.
